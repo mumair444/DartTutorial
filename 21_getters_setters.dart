@@ -21,5 +21,5 @@ class Student {
   void set percentage(double marksSecured) =>
       _percent = (marksSecured / 500) * 100;
   // Instance variable with Custom Getter
-  double get percentage => _percent;
+  double get percentage => _percent ?? 0;
 }
