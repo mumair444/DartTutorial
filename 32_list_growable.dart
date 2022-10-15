@@ -1,17 +1,15 @@
 
-// Objectives
-// 1. Growable list
+
 
 void main() {
-	// Elements:    N   21  12
-	// Index:       0   1   2
 
-	List<String> countries = ["USA", "INDIA", "CHINA"];     // Growable List : METHOD 1
+
+	List<String> countries = ["USA", "INDIA", "CHINA"];  
 	countries.add("Nepal");
 	countries.add("Japan");
 
 
-	List<int> numbersList = List();                         // Growable List: METHOD 2
+	List<int> numbersList = List[];                         // Growable List: METHOD 2
 	numbersList.add(73);    // Insert Operation
 	numbersList.add(64);
 	numbersList.add(21);
