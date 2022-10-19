@@ -49,10 +49,11 @@ void main() {
 
 	print(""); print("CASE 5");
 	// CASE 5: Custom Exception
+  DepositException err = DepositException();
 	try {
 		depositMoney(-200);
 	} catch (e) {
-		print(e.errorMessage());
+		print(err.errorMessage());
 	} finally {
 		// Code
 	}

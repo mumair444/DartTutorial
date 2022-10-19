@@ -16,12 +16,14 @@ void main() {
 
 class Student {
 
-  String name;        // Instance Variable with default Getter and Setter
+ late String name;        // Instance Variable with default Getter and Setter
 
-  double _percent;    // Private Instance Variable for its own library
+ late double _percent;    // Private Instance Variable for its own library
 
   // Instance variable with Custom Setter
   void set percentage(double marksSecured) => _percent = (marksSecured / 500) * 100;
   // Instance variable with Custom Getter
-  double get percentage => _percent;
+  double get percentage {
+    return _percent;
+  }
 }
